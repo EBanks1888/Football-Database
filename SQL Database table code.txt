@@ -33,6 +33,8 @@ CREATE TABLE Player (
 
 
 
+
+
 CREATE TABLE Point_of_contact (
     id_Player         INTEGER REFERENCES Player (id_point_of_contact) 
                               NOT NULL,

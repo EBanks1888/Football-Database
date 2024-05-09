@@ -1,2 +1,41 @@
 Football Database Queries:
 
+1) SELECT * FROM player
+
+:Returns all players listed
+
+
+
+2) SELECT * from Player
+Where age>13 
+(see "SQL Query 1" screenshot)
+
+
+
+3) SELECT MAX(age) AS ages, id_team
+FROM Player
+GROUP BY id_team
+
+(see "SQL Query 2" screenshot)
+
+
+
+4) SELECT AVG(age)
+FROM Player
+
+(see "SQL Query 3" screenshot)
+
+
+
+5) SELECT * FROM Player
+WHERE age > (SELECT AVG(age) FROM Player)
+
+(see "SQL Query 4" screenshot)
+
+
+
+6) SELECT SUM(age)
+FROM Player
+WHERE id_team = 3
+
+(see "SQL Query 5" screenshot)

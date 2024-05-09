@@ -1,0 +1,10 @@
+Creating player table code:
+
+CREATE TABLE Player (
+    First_name TEXT    NOT NULL,
+    Last_name  TEXT    NOT NULL,
+    id         INTEGER UNIQUE
+                       PRIMARY KEY,
+    id_team    INTEGER NOT NULL,
+    age        INTEGER
+);
